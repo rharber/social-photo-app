@@ -1,0 +1,46 @@
+<ul class="thePhotos">
+    <li class="aPhoto" ng-repeat="photo in userPhotos">
+
+        <div class="photoButtons">
+          <button ng-if="checkOwn(photo.user_id)" class="deletePhoto" ng-click="deletePhoto(photo._id)">Delete Photo</button>
+
+          <button ng-class="(didLike(photo.liked)) ? 'likeBtn liked' : 'likeBtn unliked'" ng-click="likePhoto(photo._id)">{{didLike(photo.liked) ? "Unlike Photo" : "Like Photo"}}</button>
+
+          <button type="button" class="likeBtn" disabled>Total Likes: {{photo.liked.length}}</button>
+
+          <button ng-class="(isFav(photo.favorited)) ? 'likeBtn faved' : 'likeBtn unliked'" ng-click="favPhoto(photo._id)">{{isFav(photo.favorited) ? "Favorited" : "Favorite?"}}</button>
+
+        </div>
+
+        <img ng-src="images/{{photo.file_name}}">
+
+        <div class="photoCaption">
+            Created at {{photo.date_time}}
+        </div>
+
+        <div ng-if="photo.comments.length > 0" class="commLabel">
+            Photo Comments:
+        </div>
+
+        <ul class="theComments">
+            <li class="aComment" ng-repeat="theComment in photo.comments">
+                <div class="commText">
+                    "{{theComment.comment}}"
+                </div>
+                <a class="commenterLink" ng-href="/photo-share.html#/users/{{theComment.user._id}}">
+                    -{{theComment.user.first_name}}
+                </a>
+                <div class="createdAt">
+                    (created at: {{theComment.date_time}})
+                </div>
+                <button ng-if="checkOwn(theComment.user._id)" class="deleteComm" ng-click="deleteComm(theComment._id, photo._id)">Delete Comment</button>
+            </li>
+        </ul>
+
+        <div class="addComment">
+          <input type="text" class="adder" ng-model='commText' placeholder="Type comment."/>
+          <button type="button" ng-click="addComment(photo._id, commText)" class="send">Send</button>
+        </div>
+
+    </li>
+</ul>

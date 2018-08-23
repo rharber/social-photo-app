@@ -1,0 +1,14 @@
+<div ng-if="main.loggedIn.logged" class="listContainer">
+  <ul class="listOfUsers">
+    <li class="favTab">
+      <a ng-href="/photo-share.html#/favorites">Favorites</a>
+    </li>
+    <div class="">
+
+
+    </div>
+    <li class="users" ng-repeat="user in main.userList">
+      <a ng-href="/photo-share.html#/users/{{user._id}}">{{user.first_name}}</a>
+    </li>
+  </ul>
+</div>

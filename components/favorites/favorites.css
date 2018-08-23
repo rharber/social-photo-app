@@ -1,0 +1,117 @@
+ul {
+    list-style: none;
+}
+
+div {
+    padding: 5px;
+}
+
+.unfave {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    color: black;
+    background-color: red;
+}
+
+.nails {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    border: 4px black solid;
+    object-fit: cover;
+    object-position: center;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    border: 4px blue solid;
+}
+
+.theModal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /* Stay in place */
+    z-index: 99999999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalContent {
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%;
+    max-height: 70%;
+    overflow: hidden;
+}
+
+.fullSize {
+    object-fit: cover;
+    width:auto;
+    height:auto;
+    max-width:MaxSize;
+    max-height:MaxSize;
+}
+
+.close {
+    position: absolute;
+    color: #aaa;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.theFaves {
+    min-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photoCaption {
+    font-style: italic;
+}
+
+.aFave {
+    min-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.createdAt {
+    color: grey;
+    font-style: italic;
+}

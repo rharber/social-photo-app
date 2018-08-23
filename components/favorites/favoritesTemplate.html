@@ -1,0 +1,34 @@
+<ul class="theFaves">
+    <div class="title">
+        Your Favorite Photos:
+    </div>
+    <li class="aFave" ng-repeat="photo in userFaves">
+
+        <div class="nails">
+            <button class="unfave" ng-click="favPhoto(photo._id)">X</button>
+            <img ng-click="modalOn(photo)" class="thumbnail" ng-src="images/{{photo.file_name}}">
+        </div>
+
+    </li>
+    <div ng-if="photoModal" class="theModal">
+        <div class="modalContent">
+            <button type="button" class="close" ng-click="modalOff()">X</button>
+            <img class="fullSize" ng-src="images/{{currentPhoto}}">
+            <div class="photoCaption">
+                Created at {{caption}}
+            </div>
+        </div>
+    </div>
+</ul>
+
+<!--<script>
+// Get the modal
+var modal = document.getElementById('007');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>-->

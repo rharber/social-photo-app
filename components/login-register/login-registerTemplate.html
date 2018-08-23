@@ -1,0 +1,30 @@
+<div class="main">
+    <div class="loginForm" ng-click="clearMSG()">
+
+        <div class="title">Login</div>
+        <input type="text" placeholder="Login Name" ng-model="login_name">
+        <input type="password" placeholder="Password" ng-model="password">
+        <button ng-click="login()">Login</button>
+
+        <div class="or">- or -</div>
+
+        <div class="title">Create Account</div>
+        <input type="text" placeholder="Login Name" ng-model="newUser.login_name">
+        <input type="text" placeholder="First Name" ng-model="newUser.first_name">
+        <input type="text" placeholder="Last Name" ng-model="newUser.last_name">
+        <input type="text" placeholder="Location" ng-model="newUser.location">
+        <input type="text" placeholder="Description" ng-model="newUser.description">
+        <input type="text" placeholder="Occupation" ng-model="newUser.occupation">
+        <input type="password" placeholder="Password" ng-model="newUser.password">
+        <input type="password" placeholder="Re-enter Password" ng-model="newUser.rePass">
+    </div>
+    <button ng-click="register()">Create Account</button>
+</div>
+<div class="messages">
+    <div ng-if="errorMSG !== ''" class="error">
+        {{errorMSG}}
+    </div>
+    <div ng-if="successMSG !== ''" class="success">
+        {{successMSG}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.main {
+  min-width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.theDetails {
+  min-width: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fullName {
+  font-weight: bold;
+}
+
+.deleteUser, .yes {
+  background-color: red;
+}

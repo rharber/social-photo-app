@@ -1,0 +1,89 @@
+/*
+CSS for the CS142 project #5 main page
+
+Since CSS uses a global name space for classes we should use class names starting with
+cs142-main- here.
+*/
+
+div:focus, textarea:focus, button:focus, input:focus {
+  outline: none;
+}
+
+.modal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  z-index: 999;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(63,81,181);
+  color: white;
+  width: 50vw;
+  height: 30vh;
+  transform: translate(-50%, -50%);
+}
+
+.modalTop {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photoInput {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolKit {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.toolKit_1 {
+  justify-content: flex-start;
+}
+
+.toolKit_3 {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolKit_2 {
+  justify-content: flex-end;
+}
+
+.logoutBtn, .uploadBtn, .closeBtn {
+  margin: 4px;
+  background-color: white;
+  color: rgb(63,81,181);
+}
+
+.logoutBtn:hover, .uploadBtn:hover, .closeBtn:hover{
+  background-color: grey;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(63,81,181);
+}

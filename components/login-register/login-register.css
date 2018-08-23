@@ -1,0 +1,54 @@
+.main {
+  min-width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.messages {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.loginForm {
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginForm * {
+  margin: 2px;
+}
+
+.title {
+  font-size: 24px;
+  text-decoration: bold;
+}
+
+.error, .success{
+  font-size: 20px;
+  text-decoration: bold;
+  color: red;
+}
+.success{
+  color: green;
+}
+
+input {
+  flex: 1;
+  min-width: 100%;
+}
+
+button {
+  border-style: none;
+  background-color: rgb(63,81,181);
+  color: white;
+}

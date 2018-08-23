@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="theDetails">
+    <button ng-if="checkUser(main.currentUser._id)" class="deleteUser" ng-click="togglePrompt()">Delete User</button>
+    <div ng-if="prompting" class="yesOrNo">
+      <div class="prompt">Are you sure you want to delete your whole profile?</div>
+      <div class="promptButtons">
+        <button ng-click="togglePrompt()" type="button" class="no">No</button>
+        <button ng-click="deleteUser(main.currentUser._id)" type="button" class="yes">Yes</button>
+      </div>
+    </div>
+    <div class="fullName">
+      {{main.currentUser.first_name}} {{main.currentUser.last_name}}
+    </div>
+    <div class="theLoc">
+      Location: {{main.currentUser.location}}
+    </div>
+    <div class="theDescription">
+      {{main.currentUser.description}}
+    </div>
+    <div class="theOcc">
+      Occupation: {{main.currentUser.occupation}}
+    </div>
+    <div class="photoLink">
+      <a ng-href="/photo-share.html#/photos/{{main.currentUser._id}}">See Photos of {{main.currentUser.first_name}}</a>
+    </div>
+  </div>
+</div>

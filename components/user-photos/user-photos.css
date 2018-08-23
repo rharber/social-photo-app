@@ -1,0 +1,110 @@
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  padding: 5px;
+}
+
+.deletePhoto, .deleteComm {
+  background-color: red;
+}
+
+.liked {
+  background-color: green;
+}
+
+.faved {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+  background-color: gold;
+}
+
+.unliked {
+  background-color: grey;
+}
+
+.deletePhoto, .likeBtn {
+  margin: 4px;
+}
+
+.thePhotos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.photoButtons {
+  min-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theComments {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.addComment {
+  flex: 1;
+  min-width: 100%;
+  margin: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30px;
+}
+
+.adder {
+  height: auto;
+  min-width: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.send {
+  margin-left: 4px;
+  flex: 0 1;
+  min-height: 100%;
+}
+
+.commLabel {
+  font-weight: bold;
+}
+
+.photoCaption {
+  font-style: italic;
+}
+
+.aPhoto {
+  max-width: 70%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid blue;
+  margin-bottom: 5px;
+}
+
+.aComment {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.createdAt {
+  color: grey;
+  font-style: italic;
+}
