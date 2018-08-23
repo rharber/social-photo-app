@@ -11,5 +11,5 @@ Social network web app for posting, sharing, favoriting, and commenting on photo
 
 # Functionality
 
-## ALL STORIES IN ONE VIDEO: https://vimeo.com/208750876
-## PASSWORD FOR VIDEO (Case Sensitive): `webapp_finaldemo_ryanharber`
+### ALL STORIES IN ONE VIDEO: https://vimeo.com/208750876
+### PASSWORD FOR VIDEO (Case Sensitive): `webapp_finaldemo_ryanharber`
