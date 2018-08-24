@@ -1,5 +1,6 @@
 # social-photo-app
-Social network web app for posting, sharing, favoriting, and commenting on photos.
+- Social network web app for posting, sharing, favoriting, and commenting on photos.
+- Focus is on functionality only, thus styling is very minimal.
 
 # Installation
 - Install MongoDB
